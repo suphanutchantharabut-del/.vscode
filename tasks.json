@@ -1,0 +1,17 @@
+﻿{
+    "version":  "2.0.0",
+    "tasks":  [
+                  {
+                      "label":  "build-active-project",
+                      "problemMatcher":  "$msCompile",
+                      "command":  "dotnet",
+                      "args":  [
+                                   "build",
+                                   "${file}",
+                                   "/property:GenerateFullPaths=true",
+                                   "/consoleloggerparameters:NoSummary;ForceNoAlign"
+                               ],
+                      "type":  "process"
+                  }
+              ]
+}
