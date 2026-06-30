@@ -1,35 +1,44 @@
 ```mermaid
 mindmap
- root((Pac-Man))
- Theme
- เขาวงกต
- อาเขตยุค 80
- Mechanics
- เดินในเขาวงกต
- กิน Pellet
- Power Pellet
- Content
- ผีศัตรู 4 ตัว
- ผลไม้โบนัส
- Audience
- ผู้เล่น Casual
+root((Pac-Man))
+  Theme
+   เขาวงกต
+   อาเขตยุค 80
+  Mechanics
+   เดินในเขาวงกต
+   กิน Pellet
+   Power Pellet
+  Content
+   ผีศัตรู 4 ตัว
+   ผลไม้โบนัส
+  Audience
+   ผู้เล่น Casual
+  Score
+   Highscore
+   Leaderboard
 ```
 
+## เพิ่ม Hightscore และ Leadboard
 
 ```mermaid
 quadrantChart
  title Pac-Man — Feature Prioritization
  x-axis Low Effort --> High Effort
  y-axis Low Impact --> High Impact
- quadrant-1 ท าก่อน (Quick Wins)
- quadrant-2 งานหลัก (Major)
- quadrant-3 ไว้ทีหลัง (Nice to Have)
- quadrant-4 ตัดทิ้ง (Reconsider)
+ quadrant-1 Quick Wins
+ quadrant-2 Major
+ quadrant-3 Nice to Have
+ quadrant-4 Reconsider
  Maze Movement: [0.3, 0.95]
- Ghost AI: [0.7, 0.9]
- Online Leaderboard: [0.7, 0.3]
+ Ghost AI: [0.1, 0.9]
+ Online Leaderboard: [0.2, 0.3]
+ Bonus Items: [0.6, 0.6]
+ Skin: [0.6, 0.4]
+ Theme: [0.6, 0.1]
+ SFX: [0.6, 0.8]
 ```
 
+## เรียงระดับความสำคัญของ Features ใหม่
 
 ```mermaid
 gantt
@@ -41,7 +50,11 @@ gantt
  Maze Movement :active, p1, after c1, 5d
  Ghost AI : p2, after p1, 7d
  Pellet & Score : p3, after p2, 7d
+ SFX : p3, after p2, 7d
  section Post
  QA & Bug Fix : q1, after p3, 5d
  Release Build :milestone, m1, after q1, 0d
 ```
+
+## ปรับ SFX
+
